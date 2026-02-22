@@ -6,7 +6,7 @@ API_URL = "https://api.seedance.ai/v1/chat/completions"
 API_KEY = "YOUR_API_KEY"
 
 payload = {
-    "model": "seedance-1.0-pro-fast",
+    "model": "seedance-1-0-pro-fast-251015",
     "messages": [
         {"role": "user", "content": "Write a detailed 1500 word essay about AI technology trends in 2026."}
     ],
