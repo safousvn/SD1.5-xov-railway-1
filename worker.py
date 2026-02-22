@@ -4,7 +4,7 @@ import requests
 import threading
 
 API_URL = "https://ark.ap-southeast.bytepluses.com/api/v3/contents/generations/tasks"
-API_KEY = os.getenv("API_KEY")
+API_KEY = os.getenv("ARK_API_KEY")
 
 headers = {
     "Authorization": f"Bearer {API_KEY}",
