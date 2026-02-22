@@ -2,7 +2,7 @@ import time
 import requests
 import threading
 
-API_URL = "https://api.seedance.ai/v1/chat/completions"
+API_URL = "https://ark.ap-southeast.bytepluses.com/api/v3/contents/generations/tasks"
 API_KEY = "YOUR_API_KEY"
 
 payload = {
