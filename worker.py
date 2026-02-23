@@ -4,7 +4,7 @@ import requests
 import threading
 
 API_URL = "https://ark.ap-southeast.bytepluses.com/api/v3/contents/generations/tasks"
-API_KEY = os.getenv("ARK_API_KEY")
+API_KEY = os.getenv("ARK_API_KEY", "").strip()
 
 headers = {
     "Authorization": f"Bearer {API_KEY}",
@@ -25,11 +25,8 @@ payload = {
 
 def send_request():
     while True:
-        try:
-            r = requests.post(API_URL, json=payload, headers=headers)
-            print(r.status_code, r.text)
-        except Exception as e:
-            print(e)
+        r = requests.post(API_URL, json=payload, headers=headers)
+        print(r.status_code, r.text)
         time.sleep(1)
 
 for _ in range(5):
