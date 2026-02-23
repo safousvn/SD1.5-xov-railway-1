@@ -13,10 +13,12 @@ headers = {
 
 payload = {
     "model": "seedance-1-0-pro-fast-251015",
-    "input": {
-        "type": "text_to_video",
-        "prompt": "A cinematic futuristic city in 2026, ultra realistic, 4K"
-    },
+    "content": [
+       {
+        "type": "text",
+        "text": "A cinematic futuristic city in 2026, ultra realistic, 4K"
+       }
+    ],
     "parameters": {
         "duration": 5,
         "resolution": "720p"
