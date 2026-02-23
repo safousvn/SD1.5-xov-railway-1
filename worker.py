@@ -20,7 +20,7 @@ payload = {
        }
     ],
     "parameters": {
-        "duration": 5,
+        "duration": 8,
         "resolution": "720p"
     }
 }
