@@ -12,7 +12,8 @@ headers = {
 }
 
 payload = {
-    "model": "seedance-1-0-pro-fast-251015",
+    #"model": "seedance-1-0-pro-fast-251015",
+    "model": "seedance-1-5-pro-251215",
     "content": [
        {
         "type": "text",
